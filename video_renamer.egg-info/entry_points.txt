@@ -1,0 +1,2 @@
+[console_scripts]
+video_renamer = video_renamer.main:main

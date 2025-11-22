@@ -85,7 +85,7 @@ def traiter_dossier(folder):
             else:
                 print(f"{entry.name} : déjà renommé avec le bon format, ignoré")
 
-if __name__ == "__main__":
+def main():
     if len(sys.argv) < 2:
         print("Usage : python script.py <dossier_video>")
         sys.exit(1)

@@ -1,0 +1,9 @@
+setup.py
+video_renamer/__init__.py
+video_renamer/main.py
+video_renamer.egg-info/PKG-INFO
+video_renamer.egg-info/SOURCES.txt
+video_renamer.egg-info/dependency_links.txt
+video_renamer.egg-info/entry_points.txt
+video_renamer.egg-info/requires.txt
+video_renamer.egg-info/top_level.txt
