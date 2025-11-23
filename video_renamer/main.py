@@ -57,6 +57,7 @@ def renommer_video(file_video):
             fps = num / den if den != 0 else 0
             fps_arrondi = math.ceil(fps / 10) * 10
             display_aspect_ratio = video_stream.get('display_aspect_ratio', 'N/A')
+            display_aspect_ratio = display_aspect_ratio.replace(':', '_')
             width = video_stream.get('width', 0)
             height = video_stream.get('height', 0)
             resolution = resolution_label(width, height)
@@ -94,3 +95,14 @@ def main():
         print(f"Le chemin {folder_name} n'est pas un dossier valide.")
         sys.exit(1)
     traiter_dossier(folder_name)
+
+
+#if __name__ == '__main__':
+#    if len(sys.argv) < 2:
+#        print("Usage : python script.py <dossier_video>")
+#        sys.exit(1)
+#    folder_name = sys.argv[1]
+#    if not os.path.isdir(folder_name):
+#        print(f"Le chemin {folder_name} n'est pas un dossier valide.")
+#        sys.exit(1)
+#    traiter_dossier(folder_name)
